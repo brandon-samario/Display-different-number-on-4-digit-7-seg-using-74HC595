@@ -43,7 +43,7 @@ void loop() {
   digitalWrite(9, HIGH);
   digitalWrite(8, LOW);
   digitalWrite(latch, LOW);
-  shiftOut(data, cp, MSBFIRST, digits[6]); //number to display in digit 4
+  shiftOut(data, cp, MSBFIRST, digits[0]); //number to display in digit 4
   digitalWrite(latch, HIGH);
 
   delay(5); //delay 5ms
@@ -54,7 +54,7 @@ void loop() {
   digitalWrite(9, LOW);
   digitalWrite(8, HIGH);
   digitalWrite(latch, LOW);
-  shiftOut(data, cp, MSBFIRST, digits[5]); //number to display in digit 3
+  shiftOut(data, cp, MSBFIRST, digits[2]); //number to display in digit 3
   digitalWrite(latch, HIGH);
   
   delay(5); //delay 5ms
@@ -65,7 +65,7 @@ void loop() {
   digitalWrite(9, HIGH);
   digitalWrite(8, HIGH);
   digitalWrite(latch, LOW);
-  shiftOut(data, cp, MSBFIRST, digits[4]); //number to display in digit 2
+  shiftOut(data, cp, MSBFIRST, digits[2]); //number to display in digit 2
   digitalWrite(latch, HIGH);
   
   delay(5); //delay 5ms
@@ -76,7 +76,7 @@ void loop() {
   digitalWrite(9, HIGH);
   digitalWrite(8, HIGH);
   digitalWrite(latch, LOW);
-  shiftOut(data, cp, MSBFIRST, digits[3]); //number to display in digit 1
+  shiftOut(data, cp, MSBFIRST, digits[0]); //number to display in digit 1
   digitalWrite(latch, HIGH);
   
   delay(5); //delay 5ms
